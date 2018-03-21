@@ -9,8 +9,8 @@ var AjaxManager = function(){
             url: postUri,
             contentType: 'application/json',
             headers: {
-                'Accept'       : 'application/json',
-                'X-CSRF-TOKEN' : token 
+                'Accept'        : 'application/json',
+                'GT-CSRF-TOKEN' : token 
             },
             data: JSON.stringify(objToPost)
         }).done(function (objRet) {
@@ -29,8 +29,8 @@ var AjaxManager = function(){
             contentType: 'application/json;charset=utf-8',
             dataType: 'json',
             headers: {
-            	'Accept'       : 'application/json',
-            	'X-CSRF-TOKEN' : token
+            	'Accept'        : 'application/json',
+            	'GT-CSRF-TOKEN' : token
             },
             data: objToGet,
         }).done(function (objRet) {
@@ -48,8 +48,8 @@ var AjaxManager = function(){
             url: deleteUri,
             contentType: 'application/json;charset=utf-8',
             headers: {
-            	'Accept'       : 'application/json',
-            	'X-CSRF-TOKEN' : token
+            	'Accept'        : 'application/json',
+            	'GT-CSRF-TOKEN' : token
             },
         }).done(function (objRet) {
         	onDeleteSuccess(objRet);
