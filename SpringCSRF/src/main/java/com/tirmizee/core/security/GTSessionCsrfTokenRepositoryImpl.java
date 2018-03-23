@@ -12,7 +12,7 @@ import org.springframework.security.web.csrf.DefaultCsrfToken;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
 import org.springframework.util.Assert;
 
-public class HttpSessionCsrfTokenRepositoryImpl implements CsrfTokenRepository{
+public class GTSessionCsrfTokenRepositoryImpl implements CsrfTokenRepository{
 
 	private static final String DEFAULT_CSRF_PARAMETER_NAME = "_csrf";
 

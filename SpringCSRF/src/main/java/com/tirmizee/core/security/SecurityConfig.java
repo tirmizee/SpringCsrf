@@ -24,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Bean
 	public CsrfTokenRepository csrfTokenRepository(){
-		return new HttpSessionCsrfTokenRepositoryImpl();
+		return new GTSessionCsrfTokenRepositoryImpl();
 	} 
 	
 	@Override
